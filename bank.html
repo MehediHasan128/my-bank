@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>My Account</title>
+</head>
+<body class="flex justify-center">
+    <header class="w-[80%] mt-16">
+        <div>
+            <h1 class="text-5xl text-center">Welcome to my account</h1>
+        </div>
+        <div class="bg-gray-500 p-20 mt-20">
+            <div class="grid grid-cols-3 gap-5">
+                <div class="bg-lime-500 p-10 rounded-md">
+                    <h1 class="text-3xl">Deposit</h1>
+                    <p class="text-3xl mt-5">$<span id="depositTotal">00</span></p>
+                </div>
+                <div class="bg-red-500 p-10 rounded-md">
+                    <h1 class="text-3xl">Widthraw</h1>
+                    <p class="text-3xl mt-5">$<span id="widthrawTotal">00</span></p>
+                </div>
+                <div class="bg-teal-500 p-10 rounded-md">
+                    <h1 class="text-3xl">Total Ammount</h1>
+                    <p class="text-3xl mt-5">$<span id="balanceTotal">1200</span></p>
+                </div>
+            </div>
+            <div class="flex justify-between gap-5 mt-10">
+                <div class="bg-orange-500 p-10 rounded-md flex-1">
+                    <h1 class="text-3xl">Please Deposit</h1>
+                    <input class="p-3 w-full block my-4 rounded" type="text" placeholder="$ amount you want to deposit" id="depositField">
+                    <button class="py-3 px-10 bg-violet-500 rounded-xl text-xl text-white" id="btnDeposit">Deposit</button>
+                </div>
+                <div class="bg-lime-600 p-10 rounded-md flex-1">
+                    <h1 class="text-3xl">Please Widthraw</h1>
+                    <input class="p-3 w-full block my-4 rounded" type="text" placeholder="$ amount you want to widthraw" id="widthrawField">
+                    <button class="py-3 px-10 bg-violet-500 rounded-xl text-xl text-white" id="btnWidthraw">Widthraw</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <script src="JS/deposit.js"></script>
+    <script src="JS/widthraw.js
+    "></script>
+</body>
+</html>
